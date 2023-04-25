@@ -1,0 +1,18 @@
+INFO     log:test_05_login.py:47 *************** 开始执行用例 ***************
+INFO     log:test_05_login.py:48 尝试登录邮箱：+33757130211，密码：，查看接口返回
+INFO     log:rest_client.py:51 接口请求地址 ==>> https://dev.mamorucrypto.io/api/v2/public/auth/login
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:55 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+INFO     log:rest_client.py:61 接口请求体 json 参数 ==>> {
+    "phoneNumber": "+33757130211",
+    "loginType": "sms",
+    "password": "",
+    "captcha": "",
+    "siteKey": 1668674505893
+}
+INFO     log:user.py:61 接口返回码是 【 400 】, 返回信息：{'status': 'BAD_REQUEST', 'errorId': 1501, 'timestamp': '2022-11-17 08:41:45.368', 'message': 'Password is required'} 
+INFO     log:test_05_login.py:53 期望结果：登录失败， 实际结果：【 登录失败 】
+INFO     log:test_05_login.py:63 *************** Phonenumber Login - password null 断言成功  ***************
+INFO     log:test_05_login.py:65 *************** 结束执行用例 ***************

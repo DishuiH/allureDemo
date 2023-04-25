@@ -1,0 +1,18 @@
+INFO     log:test_05_login.py:21 *************** 开始执行用例 ***************
+INFO     log:test_05_login.py:22 尝试登录邮箱：leroxa1039@fgvod.com，密码：P@ssw0rd，查看接口返回
+INFO     log:rest_client.py:51 接口请求地址 ==>> https://dev.mamorucrypto.io/api/v2/public/auth/login
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:55 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+INFO     log:rest_client.py:61 接口请求体 json 参数 ==>> {
+    "userIdOrEmail": "leroxa1039@fgvod.com",
+    "loginType": "email",
+    "password": "P@ssw0rd",
+    "captcha": "",
+    "siteKey": 1668674504513
+}
+INFO     log:user.py:42 接口返回码是 【 200 】, 返回信息：{'user': 'api_test_account', 'key': 'l22sKPbakApOUgYJaPz57OxDVaacUT70', 'mfaEnabled': False, 'needUpdatePassword': False, 'userPreDeleted': False, 'toBeDeletedTimestamp': 0, 'inWhitelist': False} 
+INFO     log:test_05_login.py:27 期望结果：登录成功， 实际结果：【 登录成功 】
+INFO     log:test_05_login.py:31 *************** IDorEmail Login - login success with email 断言成功  ***************
+INFO     log:test_05_login.py:39 *************** 结束执行用例 ***************

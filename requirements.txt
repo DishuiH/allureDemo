@@ -1,0 +1,7 @@
+pytest
+PyMySQL
+allure-pytest
+requests
+PyYAML
+pytest-html
+redis

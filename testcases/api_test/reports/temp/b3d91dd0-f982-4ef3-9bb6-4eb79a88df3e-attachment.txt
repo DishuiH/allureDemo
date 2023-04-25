@@ -1,0 +1,18 @@
+INFO     log:test_05_login.py:21 *************** 开始执行用例 ***************
+INFO     log:test_05_login.py:22 尝试登录邮箱：，密码：P@ssw0rd，查看接口返回
+INFO     log:rest_client.py:51 接口请求地址 ==>> https://dev.mamorucrypto.io/api/v2/public/auth/login
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:55 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+INFO     log:rest_client.py:61 接口请求体 json 参数 ==>> {
+    "userIdOrEmail": "",
+    "loginType": "email",
+    "password": "P@ssw0rd",
+    "captcha": "",
+    "siteKey": 1668674504945
+}
+INFO     log:user.py:42 接口返回码是 【 406 】, 返回信息：{'status': 'NOT_ACCEPTABLE', 'errorId': 1019, 'timestamp': '2022-11-17 08:41:44.426', 'message': 'Bad user credential'} 
+INFO     log:test_05_login.py:27 期望结果：登录失败， 实际结果：【 登录失败 】
+INFO     log:test_05_login.py:37 *************** IDorEmail Login - userIdOrEmail null 断言成功  ***************
+INFO     log:test_05_login.py:39 *************** 结束执行用例 ***************

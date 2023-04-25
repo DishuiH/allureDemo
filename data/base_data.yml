@@ -1,0 +1,30 @@
+init_admin_user:
+  username: "shawn.xiao2"
+  password: "P@ssw0rd"
+
+# MFA free account
+api_user:
+  username: "api_test_account"
+  password: "P@ssw0rd"
+
+# MFA True account
+api_level1:
+  username: "99132ced1a0149f684ffe8b816a28879"
+  password: "P@ssw0rd"
+
+api_level2:
+  username:
+  password:
+
+api_level3:
+  username:
+  password:
+
+
+register_sql:
+  insert_delete_user:
+    - "INSERT INTO `markov_user`.`markov_user_info` (`id`, `email`, `password`, `nickname`, `avatar`, `third_uni`, `third_uni_hash`, `register_type`, `gender`, `type`, `gmt_create`, `gmt_modify`, `is_delete`) VALUES (40, 'Timekettle@icloud.com', '123456', 'Timekettle@icloud.com', NULL, NULL, 0, 5, 0, 1, '2022-06-13 11:18:47', '2022-06-13 11:18:47', 0);"
+  delete_register_user: "DELETE FROM markov_user_info WHERE email = 'Timekettle@icloud.com';"
+  select_register_user:
+    - "SELECT * FROM markov_user_info WHERE email = 'Timekettle@icloud.com';"
+    - "SELECT * FROM markov_user_info WHERE email = 'Timekettle@icloud1.com';"

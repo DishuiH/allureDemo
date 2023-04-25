@@ -1,0 +1,8 @@
+test_register_update:
+  email: "1208339033@qq.com"
+  password: "123456"
+  nickname: "mm"
+  success: true
+  desc: "Success"
+  code: 2000
+  reason: ""
